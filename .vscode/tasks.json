@@ -1,0 +1,54 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "build release",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-pthread",
+				"*.cpp",
+				"-O3",
+				"-o",
+				"/CPP/Example1/test"
+			],
+			"options": {
+				"cwd": "/CPP/Example1"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "компилятор: /usr/bin/g++"
+		},
+		{
+			"type": "cppbuild",
+			"label": "g++ build",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-pthread",
+				"-g",
+				"*.cpp",
+				"-o",
+				"/CPP/Example1/test"
+			],
+			"options": {
+				"cwd": "/CPP/Example1"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "компилятор: /usr/bin/g++"
+		}
+	]
+
+}
